@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* This is the real CSS, before this line it´s all reset */
+html{
+    font-family: 'Open Sans', sans-serif;
+     box-sizing: border-box;  /* This is to include the border as part of the box and not adding extra space*/
+}
+body{
+    background-color: #457b9d;
+    display: flex;
+    justify-content: center; /*This is to center the content of the page*/
+    align-items: center;
+    min-height: 100vh;
+}
+.panel{
+    border-radius: 10px;
+    padding: 15px 25px; /*Top and Bottom, Left and Right*/
+    width: 100%; /* With the width and Max Width defined, we made sure that the element takes 100% of the page if the size is lower than max width*/
+    max-width: 960px;
+    background-color: white;
+    /* Flex Part */
+    display: flex;
+    flex-direction: column; /*This makes content stacked by default, so when the size of the screen increases, we can expand it horizontally*/
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan{
+    border-bottom: 1px solid #caf0f8;
+}
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.pricing-header{
+    color: #219ebc;
+    font-weight: bold;
+}
+.pricing-features{
+    margin: 50px 0 25px;
+    color: #98c1d9;
+}
+.pricing-features-item{
+    font-weight: bold ;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #edf2fb;
+}
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #edf2fb;
+}
+.pricing-price{
+    color: #4a4e69;
+    display: block; /*This is to make the text takes it owns space*/
+    font-weight: bolder;
+    font-size: 32px;
+}
+.pricing-button{
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+.pricing-button:hover, .pricing-button:focus{
+    background-color: #e1f1ff;
+}
+.pricing-button.is-featured{
+    background-color: #48aaff;
+    color: white;
+}
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{ /*This is when the element has more than 1 class*/
+    background-color:#269aff;
+    color: white;
+}
+@media(min-width: 900px){
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #edf2fb ;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-bottom: none;
+        border-right: none ;
+    }
+    
+}

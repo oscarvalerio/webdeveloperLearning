@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms World</title>
+</head>
+
+<body>
+    <h2>Forms Demo</h2>
+    <form action="/first.html">
+        <p>
+            <label for="user">* Enter your Username</label>
+            <input type="text" placeholder="Username" id="user" name="username" required>
+        </p>
+
+        <p>
+            <label for="password">Enter your Password (9 chars)</label>
+            <input type="password" placeholder="Password" id="password" name="password" required minlength="9">
+        </p>
+
+        <p>
+            <label for="birthMonth">Enter your month of birth</label>
+            <input type="month" id="birthMonth" name="month">
+        </p>
+
+        <p>
+            <label for="color">Choose your favorite color</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label for="ammount">Enter your balance</label>
+            <input type="number" placeholder="Enter a Number" id="ammount" name="ammount" min="2" max="23" required>
+        </p>
+        <button>Submit</button>
+    </form>
+    <div>
+        <h2>Reddit Search</h2>
+        <p>
+            <!-- Form to send data to reddit -->
+        <form action="https://www.reddit.com/search/">
+            <label for="searchPar">Search Term</label>
+            <input type="text" id="searchPar" name="q">
+
+            <p>
+                <button>Search in reddit</button>
+            </p>
+            </p>
+    </div>
+    </form>
+
+    <!-- Checkboxes form -->
+    <div>
+        <form action="/first.html">
+            <h2>CheckBox Form</h2>
+            <p>
+                <input type="checkbox" id="male" name="man" checked">
+                <label for="male">Male</label>
+            </p>
+            <p>
+                <input type="checkbox" id="female" name="woman">
+                <label for="female">Female</label>
+            </p>
+            <p>
+                <label for="Malcom">Malcom</label>
+                <input type="radio" name="sons" id="Malcom" value="malcom">
+            
+                <label for="Reese">Reese</label>
+                <input type="radio" name="sons" id="Reese" value="reese">
+            
+                <label for="Deewey">Deewey</label>
+                <input type="radio" name="sons" id="Deewey" value="deewey">
+            </p>
+            <p>
+                <label for="tvShow">Select your Favorite Show</label>
+                <select name="serie" id="tvShow">
+                    <option value="Malcom">Malcom in the middle</option>
+                    <option value="friends">Friends</option>
+                    <option value="HMYM" selected>How I met your Mother</option>
+                </select>
+            </p>
+            <button>Submit</button>
+
+            <p>
+                <form action="/second.html">
+                    <label for="hours">Number of hours you watch TV</label>
+                    <input type="range" name="hours" id="hours" min="1" max="10" value="1">
+
+                    <p>
+                        <button>Submit Time</button>
+                    </p>
+                </form>
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>

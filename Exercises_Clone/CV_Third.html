@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/CV_third.css">
+</head>
+
+<body>
+    <!--Nav Bar code with pt 0 for padding  -->
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md pt-0 pb-0 fixed-top">
+        <!-- Logo in navbar -->
+        <a href="#" class="navbar-brand">VAGO TESTING</a>
+        <!-- Hamburguer Menu Aria Label attribute is for accessibility-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
+            <div class="navbar-toggler-icon"></div>
+        </button>
+        <!-- Links in the NavBar -->
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Practica Automatizacion</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contactame</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">Mi Experiencia</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Create a first row separated in 2 areas  -->
+    <section class="container-fluid px-0" id="firstArea">
+        <div class="row align-items-center">
+            <div class="col-lg-6 tmpDiv">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="resources/CV/itJ.jpg" alt="">
+                        </div>
+                        <div class="col-3 ">
+                            <h3>From: July 2020 To: Current</h3>
+                        </div>
+                        <div class="col-7">
+                            <h3>ITJuana - DEXCOM</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            (Appium / Selenium -- Java)
+                            Working in a company leader in the diagnosis and treatment of Diabetes in USA and 30
+                            countries. I'm part of the team responsible of creation and maintenance of test scripts
+                            built in Java; this is also combined with the use of tools like Appium/Selenium for scripts
+                            design and execution, Log4J for test results enhancement, and a company owned Automation
+                            framework. Some additional tools are used in the test and requirement management process
+                            such as Jira, Rational, Confluence, Bamboo, Artifactory, XCODE,etc.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="resources/it1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Create a Second row separated in 2 areas  -->
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="resources/it2.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="compLogo" src="resources/CV/cap_logo.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <h3>From: September 2015 To: July 2020 </h3>
+                        </div>
+                        <div class="col-7">
+                            <h3>Capgemini - Coca-Cola/FEMSA</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            Senior QA Consultant
+                            I’m working as test leader of a Quality Assurance and Testing project for one of the largest
+                            Telecomm companies in United States. Main responsibilities are focused on the analysis,
+                            execution and reporting for Test Cases/Scripts on different phases of Testing Lifecycle
+                            (requirements gathering, Test cases creation / execution, defect management, etc.). Working
+                            with Manual and Automation Tools: ALM, UFT, Selenium, TestNG, Jira
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- script to style the header  -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: #edf2f4;
+    font-family: "Nunito",sans-serif;
+}
+
+/* Style for nav bar */
+#mainNavbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* Style for links inside the nav bar */
+#mainNavbar .nav-link{
+    font-size: 1.0rem;
+    font-weight: 100;
+    color: white;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+/* Style for links inside the nav bar when Over */
+#mainNavbar .nav-link:hover{
+    color: #99c1de;
+}
+
+/* Style for the brand inside the nav bar */
+#mainNavbar .navbar-brand{
+    color: #d6e2e9;
+}
+/* Style the header when scrolling bottom */
+.navbar.scrolled{
+    background-color: #023e7d; 
+    transition: background 2s; 
+}
+/* Style to push the first element below the header initially */
+#firstArea{
+    margin-top: 50px;
+}
+h3{
+    font-size: 15px;
+}
+.tools{
+    width: 300px;
+}
+.compLogo{
+    height: 40px;
+}

@@ -1,0 +1,33 @@
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: #a9d6e5;
+    transition: backgound-color 2s, border-radius 5s;
+}
+.circle:hover{
+    background-color: #ff0a54;
+    border-radius: 50%;
+}
+section div{
+    height: 50px;
+    width: 50px;
+    background-color: #0d1b2a;
+    border 3px solid green;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+section:hover div{
+    margin-left: 500px;
+}
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 0);
+}

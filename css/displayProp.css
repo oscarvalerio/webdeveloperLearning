@@ -1,0 +1,38 @@
+#head1{
+    background-color: thistle;
+    border: 2px solid black;
+}
+#head2{
+    background-color: thistle;
+    border: 2px solid black;
+    display: inline;
+}
+span{
+    color: brown;
+    font-size: large;
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    width: 90px;
+    margin: 0px 50px 0px 30px;
+}
+section{
+    background-color: #415a77;
+    color: white;
+    width: 800px;
+    height: 200px;
+    font-size: 10px;
+}
+div{
+    background-color: #ff477e;
+    color: white;
+    width: 50%;
+    height: 50%;
+}
+p{
+    font-size: small;
+}
+#emTest{
+    font-size: 2em;
+}

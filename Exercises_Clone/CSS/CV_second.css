@@ -1,0 +1,76 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Ranchers', cursive;
+font-family: 'Russo One', sans-serif; */
+
+.headerColor{
+    background-color: #013a63;
+    margin-bottom: 100px;
+}
+.headerText{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    margin-right: 80px;
+    color: #a9d6e5;
+    text-decoration: none;
+}
+.headerItem{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #a9d6e5;
+    transition: margin-top 5s,font-size 5s;
+}
+.headerItem:hover{
+    font-size: 25px;
+    margin-top: 10px;
+    color: #a9d6e5;
+}
+.companyDesc{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roleDesc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.roleTitle{
+    color: #495057;
+    font-weight: bold;
+    width: 100%;
+}
+.compLogo{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+.compInfo{
+    font-family: 'Bebas Neue', cursive;
+    color: #495057;   
+}
+@media(max-width: 980px){
+    .toolsTitle{
+        margin-top: 100px;
+    }
+    .dissapear{
+        display: none;
+    }
+}
+.toolsCol{
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 500px;
+}
+.imgTool{
+    height: 50px;
+    margin-left: 0px;
+    margin-right: 100px;
+}

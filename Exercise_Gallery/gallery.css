@@ -1,0 +1,13 @@
+img{
+    width: 27%;
+    margin: calc(12%/6);
+}
+nav{
+    font-family: Open Sans Condensed;
+    color: #495057;
+    width: 30%;
+    border-bottom: 2px solid #495057;
+    margin-left: calc(12%/6);
+    font-size: 40px;
+    padding-bottom: .2em;
+}

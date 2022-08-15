@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    /* Flexbox to align header */
+    display: flex;
+    justify-content: space-between;
+}
+/* Style The middle elements in the header */
+.centro{
+   border: 2px solid teal;
+   flex: 1;
+   max-width: 50%;
+   display: flex;
+   justify-content: space-between ;
+}
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 4em;
+    }
+    .centro,nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 576px){
+    h1{
+        font-size: 2em;
+    }
+}

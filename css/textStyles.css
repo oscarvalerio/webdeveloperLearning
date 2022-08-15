@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    font-family:  Yellowtail , Arial Narrow;
+}
+h2{
+    text-decoration: gray underline dotted;
+    /* Font selected and backup font */
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 20px;
+}
+/* to remove the underline in links */
+a{
+    text-decoration: none;
+    color: royalblue;
+}
+p{
+    line-height: 1.2;
+    font-family: Avant Garde, Tahoma;
+    font-size: 15px;
+}
+h3{
+    letter-spacing: 10px;
+}

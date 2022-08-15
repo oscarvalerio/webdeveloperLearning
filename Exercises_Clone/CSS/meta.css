@@ -1,0 +1,68 @@
+body{
+    background-color: #343a40;
+    color: #e9ecef;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+/* At Page Level */
+.mainContainer{
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+}
+.mainContainer .sidebar{
+    flex: 1 2 15% ;    
+}
+.mainContainer .mainContent{
+    flex: 2 1 90% ;
+}
+/* At Record Level */
+.discTitle{
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: #ced4da;
+}
+
+.discInfo{
+    width: 95%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+}
+.trackList{
+    flex: 2 1 70% ;
+}
+.trackList .songList{
+    width: 90%;
+}
+.trackLogo{
+    flex: 2 1 30%;
+    text-align: center;
+}
+.trackLogo img{
+    width: 200px;
+    height: 200px;
+}
+.members{
+    display: flex;
+    justify-content: center;
+}
+.members img{
+    width: 900px;
+    height: 500px;
+    border: 5px solid white;
+}
