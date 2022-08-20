@@ -29,7 +29,7 @@ const comments = [
 
 //Set the CRUD resources for the comments functionality
 app.get('/comments',(req, res)=>{
-    res.render('comments/index')
+    res.render('comments/index', { comments })
 })
 
 app.get('/tacos', (req, res)=> {
