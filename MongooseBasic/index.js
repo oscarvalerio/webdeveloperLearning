@@ -17,16 +17,19 @@ const movieSchema = new mongoose.Schema({
 
 //the format is the name of the model (singluar and capital) and then the name of the schema
 const Movie = mongoose.model('Movie',movieSchema);
-const matrix1 = new Movie({
+/* const matrix1 = new Movie({
     title: 'Matrix',
     year: 1999,
     score: 9.5,
     rating: 'PG-15'
 })
-
+ */
 Movie.insertMany([
     {title: 'Titanic', year:2000, score:9.0, rating: 'PG-19'},
     {title: 'Lord of the Rings', year:2005, score:9.2, rating: 'PG-13'},
     {title: 'Up', year:2000, score:8.0, rating: 'PG-13'},
     {title: 'Harry Potter and the Deathly Hollows', year:2015, score:9.9, rating: 'PG-15'},
-])
+]).then( data => {
+    console.log("New Movies added");
+    console.log(data);
+})
