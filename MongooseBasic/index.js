@@ -33,3 +33,5 @@ Movie.insertMany([
     console.log("New Movies added");
     console.log(data);
 })
+
+
