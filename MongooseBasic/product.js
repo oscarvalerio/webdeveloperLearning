@@ -28,9 +28,36 @@ const productSchema = new mongoose.Schema({
     }
 })
 
+productSchema.methods.greet = function(){
+    console.log("Hello");
+    console.log(` -- from ${this.name}`);
+}
+
+//Update properties of an object found
+productSchema.methods.toggleOnSale = function (){
+    this.onSale = !this.onSale;
+    return this.save();
+}
+
+//static method declaration
+productSchema.statics.fireSale = function (){
+    return this.updateMany({},{onSale: true, price: 9.99})
+}
+
 const Product = mongoose.model('Product',productSchema);
 
-const bike = new Product({name:'Suit Bike',price: 28.99,categories: ['cycling','Safety']})
+const findProduct = async ()=>{
+   const foundProduct = await Product.findOne({name: 'Bike Helmet'});
+   foundProduct.greet();
+   console.log(foundProduct);
+   await foundProduct.toggleOnSale();
+   console.log(foundProduct);
+}
+
+findProduct();
+Product.fireSale().then(res => console.log(res));
+
+const bike = new Product({name:'pedals original',price: 13.99,categories: ['cycling','Sports']})
 bike.save().then(data => {
     console.log("IT WORKED!!");
     console.log(data);
