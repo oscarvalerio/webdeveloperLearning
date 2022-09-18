@@ -15,9 +15,10 @@
         <input type="number" name="price" id="price" placeholder="99.99">
         <label for="category">Select Product Category</label>
         <select name="category" id="category">
-            <option value="fruit">Fruit</option>
-            <option value="vegetable">Vegetable</option>
-            <option value="dairy">Dairy</option>
+            <% for(let category of categories ){ %> 
+                <option value="<%= category %>"><%= category %></option>
+                
+            <% } %>
         </select>
         <button>Submit</button>
     </form>
